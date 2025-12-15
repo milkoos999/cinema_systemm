@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://cinema_db:5432/cinema_db
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: false
+  thymeleaf:
+    cache: true
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+logging:
+  level:
+    root: INFO
+
+jwt:
+  secret: "superSecretArtSchoolKeyForJwtGeneration"
+  expiration: 3600000

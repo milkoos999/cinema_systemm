@@ -1,0 +1,18 @@
+.admin-footer {
+    font-size: 14px;
+    border-top: 1px solid #333;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+.content-wrapper {
+    padding-bottom: 80px;
+}
